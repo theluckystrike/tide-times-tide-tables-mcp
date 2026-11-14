@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.theluckystrike/tide-times-tide-tables-mcp",
+  "title": "Tide Times and Tide Tables MCP",
+  "description": "Tide times and tide tables from NOAA: high and low tides for US coasts, tide now, low tide windows.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/theluckystrike/tide-times-tide-tables-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tide-times-tide-tables-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

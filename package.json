@@ -1,0 +1,59 @@
+{
+  "name": "tide-times-tide-tables-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for tide times and tide tables: high and low tide times and heights for any US coastal place or NOAA station, the tide right now, low tide windows for tide pooling, from NOAA CO-OPS predictions. No API key.",
+  "type": "module",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "mcpName": "io.github.theluckystrike/tide-times-tide-tables-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theluckystrike/tide-times-tide-tables-mcp"
+  },
+  "homepage": "https://www.mcpstamp.com/servers/",
+  "bin": {
+    "tide-times-tide-tables-mcp": "dist/stdio.js"
+  },
+  "main": "dist/stdio.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test",
+    "start": "node dist/stdio.js",
+    "deploy": "npx wrangler@4 deploy",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "claude",
+    "tide",
+    "tides",
+    "tide-times",
+    "tide-table",
+    "tide-tables",
+    "high-tide",
+    "low-tide",
+    "tide-chart",
+    "noaa",
+    "co-ops",
+    "tide-pooling",
+    "cloudflare-workers"
+  ]
+}

@@ -1,0 +1,6 @@
+[
+  ["tide_times", {"location": "Santa Cruz, CA"}],
+  ["tide_now", {"location": "9414290"}],
+  ["low_tide_windows", {"location": "Monterey, CA", "days": 14, "daylight_only": false}],
+  ["tide_stations_search", {"query": "Bar Harbor, ME"}]
+]
